@@ -1,7 +1,18 @@
-// document.getElementById("counter-el").innerText = 10;
-
 let counts = 0;
+let countEl = document.getElementById("counter-el");
 
-function increment() {
-  console.log("button was clicked");
-}
+console.log(countEl);
+
+let increment = () => {
+  counts = counts += 1;
+  countEl.innerText = counts;
+};
+
+let decrement = () => {
+  counts = counts -= 1;
+  countEl.innerText = counts;
+};
+
+let save = () => {
+  console.log(counts);
+};
